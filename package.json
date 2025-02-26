@@ -1,6 +1,6 @@
 {
   "name": "sd-design-system",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "description": "A reusable Vue 3 design system with Tailwind and PrimeVue",
   "type": "module",
@@ -13,8 +13,14 @@
   "license": "MIT",
   "exports": {
     ".": {
-      "import": "./dist/sd-design-system.es.js",
-      "require": "./dist/sd-design-system.umd.js"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/sd-design-system.es.js"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/sd-design-system.umd.js"
+      }
     },
     "./tailwind": "./dist/tailwindConfig.js",
     "./style.css": "./dist/sd-design-system.css"
