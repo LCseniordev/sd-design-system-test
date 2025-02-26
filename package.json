@@ -1,0 +1,51 @@
+{
+  "name": "sd-design-system",
+  "version": "0.0.1",
+  "private": false,
+  "type": "module",
+  "files": ["dist"],
+  "main": "./dist/sd-design-system.umd.js",
+  "module": "./dist/sd-design-system.es.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/sd-design-system.es.js",
+      "require": "./dist/sd-design-system.umd.js"
+    },
+    "./tailwind": "./dist/tailwindConfig.js",
+    "./style.css": "./dist/sd-design-system.css"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@primeuix/themes": "^1.0.0",
+    "primevue": "^4.3.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@tsconfig/node22": "^22.0.0",
+    "@types/node": "^22.13.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.2.0",
+    "@vue/eslint-config-typescript": "^14.4.0",
+    "@vue/tsconfig": "^0.7.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.20.1",
+    "eslint-plugin-vue": "^9.32.0",
+    "jiti": "^2.4.2",
+    "npm-run-all2": "^7.0.2",
+    "prettier": "^3.5.1",
+    "tailwindcss": "^3.4.17",
+    "typescript": "~5.7.3",
+    "vite": "^6.1.0",
+    "vite-plugin-vue-devtools": "^7.7.2",
+    "vue-tsc": "^2.2.2"
+  }
+}
