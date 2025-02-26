@@ -4,7 +4,7 @@ import SdoAvatar from '@/components/Avatar/SdoAvatar.vue'
 </script>
 
 <template>
-  <SdoButton title="Hello" />
+  <SdoButton label="Hello" />
   <SdoAvatar title="H" />
 
   <h1 class="text-lg uppercase text-blue-500">Test tailwind</h1>

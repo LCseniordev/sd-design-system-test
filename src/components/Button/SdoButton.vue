@@ -2,10 +2,11 @@
 import Button from 'primevue/button'
 
 const props = defineProps<{
-  title: string
+  label: string
+  severity?: 'secondary' | 'info' | 'success' | 'warn' | 'danger' | 'contrast'
 }>()
 </script>
 
 <template>
-  <Button :label="props.title" />
+  <Button v-bind="props" />
 </template>

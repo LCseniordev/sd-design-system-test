@@ -2,8 +2,11 @@
   "name": "sd-design-system",
   "version": "0.0.1",
   "private": false,
+  "description": "A reusable Vue 3 design system with Tailwind and PrimeVue",
   "type": "module",
-  "files": ["dist"],
+  "files": [
+    "dist"
+  ],
   "main": "./dist/sd-design-system.umd.js",
   "module": "./dist/sd-design-system.es.js",
   "types": "./dist/index.d.ts",
@@ -45,6 +48,7 @@
     "tailwindcss": "^3.4.17",
     "typescript": "~5.7.3",
     "vite": "^6.1.0",
+    "vite-plugin-dts": "^4.5.0",
     "vite-plugin-vue-devtools": "^7.7.2",
     "vue-tsc": "^2.2.2"
   }
