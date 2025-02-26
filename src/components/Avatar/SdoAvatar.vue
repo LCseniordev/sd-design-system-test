@@ -1,9 +1,11 @@
 <script setup lang="ts">
 import Avatar from 'primevue/avatar'
 
-const props = defineProps<{
+export interface SdoAvatarProps {
   title: string
-}>()
+}
+
+const props = defineProps<SdoAvatarProps>()
 </script>
 
 <template>
