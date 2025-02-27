@@ -1,19 +1,10 @@
-import './assets/main.css'
 import './assets/tailwind.css'
 
-import { installPrimeVue } from './plugin' // ✅ Import plugin function
-
-//  Export install function (no need for separate build)
-export { installPrimeVue }
+//  Export plugins utils
+export * from './plugin'
 
 //  Ensure all components are explicitly exported
-export { default as SdoButton } from './components/Button/SdoButton.vue'
-export { default as SdoAvatar } from './components/Avatar/SdoAvatar.vue'
+export * from './components'
 
-//  Export Tailwind config
-import { tailwindConfig } from './tailwind'
-export { tailwindConfig }
-
-//  Export colors config
-import { COLORS } from './theme/colors'
-export { COLORS }
+//  Export Tailwind config and theme variables
+export * from './theme'

@@ -1,5 +1,5 @@
 import type { Config } from 'tailwindcss'
-import { COLORS } from './theme/colors'
+import { COLORS } from './colors.ts'
 
 export const tailwindConfig: Config = {
   content: ['./src/**/*.{html,js,vue,ts}'],

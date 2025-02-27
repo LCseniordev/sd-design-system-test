@@ -16,8 +16,8 @@ export default defineConfig({
       insertTypesEntry: true,
       outDir: 'dist',
       tsconfigPath: './tsconfig.lib.json',
-      include: ['src/**/*.vue', 'src/**/*.ts'], // ✅ Ensure all Vue and TS files are included
-      rollupTypes: true, // ✅ Ensures a single declaration file instead of scattered files
+      include: ['src/**/*.vue', 'src/**/*.ts'],
+      rollupTypes: true,
     }),
   ],
   resolve: {

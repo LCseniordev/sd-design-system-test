@@ -1,5 +1,5 @@
-import { tailwindConfig } from './src/tailwind.ts'
+import { tailwindConfig } from './src/theme/tailwind'
 
 export default {
-  ...tailwindConfig,
+  preset: [tailwindConfig],
 }

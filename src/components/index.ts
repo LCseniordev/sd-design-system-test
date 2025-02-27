@@ -1,4 +1,2 @@
-import SdoButton from './Button/SdoButton.vue'
-import SdoAvatar from './Avatar/SdoAvatar.vue'
-
-export { SdoButton, SdoAvatar }
+export { default as SdoButton } from './Button/SdoButton.vue'
+export { default as SdoAvatar } from './Avatar/SdoAvatar.vue'
