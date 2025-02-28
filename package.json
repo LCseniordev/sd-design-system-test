@@ -1,6 +1,6 @@
 {
   "name": "sd-design-system",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": false,
   "description": "A reusable Vue 3 design system with Tailwind and PrimeVue",
   "type": "module",
