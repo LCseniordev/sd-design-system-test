@@ -2,16 +2,11 @@ import './assets/tailwind.css'
 
 import { createApp } from 'vue'
 
-import PrimeVue from 'primevue/config'
-import Aura from '@primeuix/themes/aura'
-
 import App from './App.vue'
 
+import { installPrimeVue } from './plugin'
+
 const app = createApp(App)
-app.use(PrimeVue, {
-  theme: {
-    preset: Aura,
-  },
-})
+installPrimeVue(app)
 
 app.mount('#app')
